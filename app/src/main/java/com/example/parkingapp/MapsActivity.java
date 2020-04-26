@@ -54,9 +54,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     GoogleApiClient mGoogleApiClient;
     Marker mCurrLocationMarker;
-    ArrayList<LatLng>arrayList=new ArrayList<LatLng>();
+    /*ArrayList<LatLng>arrayList=new ArrayList<LatLng>();
     static LatLng s1=new LatLng(13.042,80.188);
-    LatLng s2=new LatLng(13.041,80.190);
+    LatLng s2=new LatLng(13.041,80.190);*/
     public static LatLng st1=s1;
 
     @Override
@@ -213,7 +213,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
                             LocationHelper helper = new LocationHelper(currentLocation.getLongitude(),currentLocation.getLatitude());
-                            FirebaseDatabase.getInstance().getReference("Current Location")
+                            /*FirebaseDatabase.getInstance().getReference("Current Location")
                                     .setValue(helper).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
@@ -225,7 +225,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                                         Toast.makeText(MapsActivity.this,"Location not saved",Toast.LENGTH_SHORT).show();
                                     }
                                 }
-                            });
+                            });*/
                             LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
 
                             MarkerOptions markerOptions = new MarkerOptions();
@@ -258,7 +258,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             mMap.animateCamera(CameraUpdateFactory.zoomTo(15.0f));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(arrayList.get(i)));
         }
-        FirebaseDatabase.getInstance().getReference("Slot 1")
+        /*FirebaseDatabase.getInstance().getReference("Slot 1")
                 .setValue(s1).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
@@ -283,7 +283,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     Toast.makeText(MapsActivity.this,"Location not saved",Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        });*/
     }
 
     private void moveCamera(LatLng latLng, float zoom, String title){
