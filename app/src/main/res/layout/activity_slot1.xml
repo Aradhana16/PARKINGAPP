@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Slot1Activity">
+
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="193dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="84dp"
+        android:text="SLOT 1"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#3F51B5"
+        android:textColorLink="#3F51B5"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/car1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/car1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/car1"
+        android:layout_width="80dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="car1"
+        android:text="AREA1"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#3F51B5"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bike1"
+        app:layout_constraintEnd_toStartOf="@+id/car2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/car2"
+        android:layout_width="89dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="car2"
+        android:text="AREA2"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textColorLink="#E91E63"
+        app:layout_constraintBaseline_toBaselineOf="@+id/car1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toEndOf="@+id/car1" />
+
+    <Button
+        android:id="@+id/bike2"
+        android:layout_width="87dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="bike2"
+        android:text="AREA4"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textColorLink="#E91E63"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bike1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bike1" />
+
+    <Button
+        android:id="@+id/bike1"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="193dp"
+        android:onClick="bike1"
+        android:text="AREA3"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bike2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

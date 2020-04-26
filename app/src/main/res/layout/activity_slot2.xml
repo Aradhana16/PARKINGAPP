@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Slot2Activity">
+
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="193dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="84dp"
+        android:text="SLOT 2"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#3F51B5"
+        android:textColorLink="#3F51B5"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/ca1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ca1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ca1"
+        android:layout_width="80dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="ca1"
+        android:text="AREA1"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/bik1"
+        app:layout_constraintEnd_toStartOf="@+id/ca2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/ca2"
+        android:layout_width="89dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="ca2"
+        android:text="AREA2"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textColorLink="#E91E63"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ca1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toEndOf="@+id/ca1" />
+
+    <Button
+        android:id="@+id/bik2"
+        android:layout_width="87dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="bik2"
+        android:text="AREA4"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textColorLink="#E91E63"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bik1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bik1" />
+
+    <Button
+        android:id="@+id/bik1"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="193dp"
+        android:onClick="bik1"
+        android:text="AREA3"
+        android:textColor="#673AB7"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bik2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ca1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
