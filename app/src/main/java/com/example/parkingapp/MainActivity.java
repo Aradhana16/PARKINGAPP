@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        /*fAuth = FirebaseAuth.getInstance();
+        fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
 
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }*/
+    }
 
     private boolean isServicesOK() {
         Log.d(TAG, "isServicesOK: checking google services version");
